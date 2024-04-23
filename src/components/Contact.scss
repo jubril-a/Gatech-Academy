@@ -1,0 +1,80 @@
+.contact {
+    display: grid;
+    overflow: hidden;
+
+    h2 {
+        font-size: clamp(1.5rem, 1.0213rem + 2.1277vw, 2.5rem);
+        line-height: 1.1;
+        letter-spacing: -2.5px;
+    }
+
+    @media (min-width: 920px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div:first-child {
+        background-color: rgba(185, 187, 237, 0.2);
+        padding: 5rem 2rem;
+    }
+
+    .form {
+        background-color: #1720cb;
+        padding-block: 5rem;
+    }
+
+    form {
+        display: grid;
+        gap: .5rem;
+        background-color: #fff;
+        padding: 3rem 1.5rem;
+        border-radius: .5rem;
+
+        * {
+            width: 240px;
+            border-radius: .25rem;
+            font-family: poppins;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.9);
+        }
+
+        input, textarea {
+            padding-inline: 0.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+
+            &:hover {
+                border: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &:focus {
+                border: 1px solid rgba(23, 32, 203, 0.4);
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            border: 0;
+            background-color: rgb(23, 32, 203);
+            color: #fff;
+            font-weight: 500;
+            transition: 1.5s;
+
+            &:hover {
+                box-shadow: inset 20rem 0 0 0 rgb(7, 12, 114);
+            }
+        }
+
+        label {
+            //font-size: .9rem;
+            font-weight: 500;
+        }
+    }
+
+    input {
+        height: 40px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}

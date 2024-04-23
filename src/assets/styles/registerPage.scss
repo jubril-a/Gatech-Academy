@@ -1,0 +1,118 @@
+@use 'Globals';
+
+.container {
+    padding-inline: 0px;
+    padding-top: 0px;
+    height: 100vh;
+
+    @media (min-width: 760px) {
+        display: flex;
+        overflow: hidden;
+    }   
+}
+
+.form-box {
+    flex: 0 1 min(100%, 450px);
+    padding: 4rem 2rem 2rem;
+    overflow: scroll;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.image-side {
+    background-image: url(/signup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 1;
+}
+
+.step-container {
+    margin-block: 2rem;
+    background-color: #fff;
+    display: none;
+
+    &.active-step {
+        display: block;
+    }
+
+    .description {
+        margin-bottom: 1.5rem;
+        color: #a9a9a9;
+        font-size: .8rem;
+    }
+
+    h2 {
+        margin-bottom: .5rem;
+    }
+
+    label:not([labels='radio']) {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    input:not([type='radio']), textarea, select {
+        margin-bottom: .7rem;
+        width: min(320px, 100%);
+        height: 44px;
+        border-radius: 8px;
+        border: 1px solid rgb(194, 194, 194);
+        padding: .2rem .5rem;
+        font-size: .9rem;
+        font-family: poppins;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border: 1px solid #0cdd11;
+    }
+
+    input[type="radio"] {
+        margin-right: 1rem;
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .date input {
+        width: 80px;
+        margin-right: .5rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
+
+    .sublabel {
+        margin-bottom: .5rem;
+        font-weight: 500;
+    }
+
+    .radios {
+        margin-bottom: 0.7rem;
+    }
+
+    .flex {
+        display: flex;
+        gap: 1rem;
+        margin-block: 1rem;
+
+        label {
+            font-size: .8rem;
+            font-weight: 500;
+        }
+    }
+
+    [type="submit"],
+    input[type="button"] {
+        background-color: red;
+    }
+
+    .register {
+        margin-top: 2rem;
+    }
+}

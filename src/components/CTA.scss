@@ -1,0 +1,29 @@
+.cta.constraint {
+    display: grid;
+    justify-content: center;
+    gap: .5rem;
+    color: #fff;
+    text-align: center;
+    max-width: 760px;
+
+    h2 {
+        font-size: clamp(1.2rem, 0.63rem + 2vw, 2rem);
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    .cta-button {
+        margin: 1rem auto 0;
+        background: #1720cb;
+
+        &:hover {
+            box-shadow: inset 20rem 0 0 0 rgb(8, 14, 133);
+        }
+    }
+
+    .subtext {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 600;
+    }
+}

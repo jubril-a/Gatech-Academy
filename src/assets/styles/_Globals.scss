@@ -1,0 +1,93 @@
+[class$="wrapper"] {
+    padding: 2rem;
+
+    @media (min-width: 840px) {
+        padding: 3rem 5rem;
+    }
+
+    &:not(.footer-wrapper) {
+        @media (min-width: 1024px) {
+            padding-block: 5rem;
+        }
+    }
+    
+}
+
+.constraint {
+    max-width: 1420px;
+    margin-inline: auto;
+}
+
+.register {
+    background: linear-gradient( 360deg, rgb(0,0,0) 0%, rgb(46,45,46) 100%);
+    color: #fff;
+    padding: .8rem 1.4rem;
+    border-radius: .5rem;
+    width: fit-content;
+    transition: 1.5s;
+
+    @media (min-width: 961px) and (max-width: 1420px) {
+        padding: .65rem 1.2rem;
+    }
+
+    &:hover {
+        box-shadow: inset 20rem 0 0 0 rgb(6, 170, 9);
+    }
+}
+
+.max-1120 {
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+.text-primary {
+    color: #0cdd11;
+}
+
+.flip {
+    transform: scaleX(-1)
+}
+
+.center-content {
+    display: grid;
+    place-items: center;
+}
+
+.overlay-content {
+    display: grid;
+    grid-template: 1fr/1fr;
+
+    > * {
+        grid-area: 1/1;
+    }
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(12px)}
+    100% {transform: translateY(0)}
+  }
+
+.bounce > * {
+    animation: bounce 4s linear 4s infinite alternate;
+}
+
+.right {
+    right: -32px;
+    top: 60%;
+}
+
+.top {
+    left: 75%;
+    top: -32px;
+}
+
+.left {
+    left: -32px;
+    top: 25%
+}
+
+.bottom {
+    left: 40%;
+    bottom: -32px
+}

@@ -1,0 +1,152 @@
+$primary-color: #0cdd11;
+@use 'Resets';
+@use 'Globals';
+
+.cta-wrapper {
+    background-color: #09101c;
+}
+
+.footer-wrapper {
+    background-color: #09101c;
+    padding-block: 0;
+}
+
+.contact-wrapper {
+    position: relative;
+
+    &::after, &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+
+    &::before {
+        background-color: #fff;
+        border-radius: 0 0 1.5rem 1.5rem;
+        z-index: -99;
+    }
+
+    &::after {
+        background-color: #09101c;
+        z-index: -100;
+    }
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    margin-block: 2rem;
+}
+
+.courses-wrapper, .factor-wrapper, .features-wrapper {
+    background-color: rgba(0, 0, 0, .05);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.courses-wrapper {
+    backdrop-filter: blur(16px);
+    border-radius: 32px 32px 0 0;
+
+    @media (min-width: 960px) {
+        border-radius: 64px 64px 0 0;
+    }
+}
+
+.courses {
+
+    .card__info {
+        padding: 1.5rem 1rem 0;
+    }
+
+    .title {
+        text-transform: uppercase;
+    }
+}
+
+.hybrid {
+    background-color: #0d8685;
+    color: #fff;
+
+    .card__image {
+        background-image: url('/features/hybrid.jpg');
+        background-size: 100%;
+    }
+}
+
+.instructors {
+    background-color: #1720cb; //#8aff66;
+    color: #fff;
+    
+    .card__image {
+        background-image: url('/features/instructors.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.curriculum {
+    background-color: #d7cc1b;
+
+    .card__image {
+        background-image: url('/features/syllabus1.jpg');
+        background-size: 100%;
+    }
+}
+
+
+.development {
+    background-color: #f4a5df;
+
+    .card__image {
+        background-image: url('/features/skilled.jpg');
+        background-size: 100%;
+    }
+}
+
+.support {
+    background-color: #8aff66;
+
+    .card__image {
+        background-image: url('/features/support.jpg');
+        background-size: 100%;
+    }
+}
+
+.projects {
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .card__image {
+        background-image: url('/features/handson.jpg');
+        background-size: 100%;
+    }
+}
+
+.comfort {
+    background-color: #00d8ff;
+
+    .card__image {
+        background-image: url('/features/comfort.jpg');
+        background-size: 100%;
+    }
+}
+
+.features {
+
+    .card {
+        padding: 2rem 1.5rem;
+    }
+
+    .card__info {
+        order: -1;
+        margin-bottom: .5rem;
+    }
+
+    .card__image {
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: .5rem;
+    }
+}
+

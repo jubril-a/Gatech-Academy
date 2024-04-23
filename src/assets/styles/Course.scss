@@ -1,0 +1,33 @@
+.hero {
+    height: 100vh;
+}
+
+.course-constraint {
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+.syllabus {
+    
+    h2 {
+        font-size: clamp(1.5rem, 1.0909rem + 1.8182vw, 2.5rem);
+        text-align: center;
+        margin: 4rem auto;
+        line-height: 1.1;
+        letter-spacing: -2.5px;
+        font-weight: 500;
+    }
+
+    span.bold {
+        font-weight: 700;
+        color: #0cdd11;
+    }
+
+    .register {
+        margin-block: 3rem;
+
+        @media (max-width: 1024px) {
+            margin-inline: 2rem;
+        }
+    }
+}

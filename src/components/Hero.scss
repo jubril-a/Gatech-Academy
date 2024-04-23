@@ -1,0 +1,153 @@
+.hero {
+    place-items: center;
+    min-height: 634px;
+    max-height: 780px;
+    padding-inline: 2rem;
+    width: 100vw;
+
+    h1 {
+        font-size: clamp(2rem, 1.4222rem + 1.7778vw, 3rem);
+        line-height: 1.2;
+        font-weight: 800;
+    }
+
+    > * {
+        text-align: center;
+    }
+}
+
+.hero main {
+    max-width: 560px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 8rem;
+    
+  
+    @media (min-width: 1160px) {
+        max-width: 760px;
+        gap: 1.25rem;
+    }
+
+    .register {
+        margin-top: 1rem;
+    }
+}
+
+.tagline {
+    max-width: 460px;
+    font-size: clamp(1.2rem, 1.0267rem + 0.5333vw, 1.5rem);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
+
+    @media (min-width: 1160px) {
+        max-width: 600px;
+    }
+}
+
+.center-icons {
+    position: absolute;
+    align-self: end;
+    z-index: -50;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1334px; //calc(100% + 32px);  
+}
+
+.tech-icons > * {
+    width: 64px;
+    position: relative;
+}
+
+.js {
+    bottom: 35vh;
+}
+
+.react {
+    bottom: 15vh;
+}
+
+.git {
+    bottom: 5;
+}
+
+.python {
+    bottom: 25vh;
+}
+
+.photoshop {
+    bottom: 15vh;
+}
+
+.node {
+    bottom: 30vh;
+}
+
+.excel {
+    bottom: 40vh;
+}
+
+.html {
+    bottom: 10vh;
+}
+
+.background {
+    position: absolute;
+    z-index: -1000;
+    inset: 0;
+
+    .shadow, .light {
+        position: absolute;
+        filter: blur(3rem);
+    }
+}
+
+.light {
+    left: 0;
+}
+
+.top-left {
+    top: -50px;
+    left: 0;
+    opacity: .15;
+}
+
+.bottom-left {
+    bottom: -25px;
+    left: 0;
+    opacity: .2;
+    transform: rotate(-30deg);
+}
+
+.bottom-right {
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    transform: rotate(-40deg);
+}
+
+.top-middle {
+    top: 0;
+    right: 10vw;
+    opacity: .15;
+}
+
+@media (max-width: 520px) {
+    .top-left,
+    .bottom-left,
+    .bottom-right,
+    .top-middle {
+        opacity: .1;
+    }
+}
+
+  
+  

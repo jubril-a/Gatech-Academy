@@ -1,0 +1,46 @@
+.card {
+    aspect-ratio: 1/1.3;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    scroll-snap-align: start;
+    flex: 0 0 min(300px, 80%);
+
+    &:hover {
+        img {
+            transform: scale(1.5);
+        }       
+    }
+}
+
+.card__image {
+    flex-grow: 1;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 2s;
+    }
+}
+
+.card__info {
+    flex-grow: 0;
+    min-height: 120px;
+    
+    .title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: .5rem;
+    }
+
+    a {
+        &:hover {
+            color: red;
+        }
+    }
+}
