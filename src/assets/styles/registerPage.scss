@@ -116,3 +116,67 @@ form {
         margin-top: 2rem;
     }
 }
+
+.loader {
+width: 48px;
+height: 48px;
+border: 5px solid rgba(0, 0, 0, 0.8);
+border-bottom-color: #30ff00;
+border-radius: 50%;
+display: inline-block;
+box-sizing: border-box;
+animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.loading {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.msg {
+    background-color: rgb(255, 255, 255);
+
+    h1 {
+        line-height: 1.1;
+        margin-block: 3rem .5rem;
+    }
+
+    .next-steps {
+        background-color: #8aff66;
+        border-radius: 1rem;
+        margin-block: 2rem;
+        padding: 2rem;
+        display: grid;
+        gap: .7rem;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+}
+
+.error {
+    margin-block: 2rem;
+    max-width: 320px;
+}
+
+.ml-1 {
+    margin: .25rem;
+}
+
+.error-link {
+    color: rgb(117, 117, 240);
+    transition: color .5s;
+
+    &:hover {
+        color: rgb(253, 59, 59);
+    }
+}

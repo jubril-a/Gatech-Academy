@@ -5,7 +5,7 @@ import Caret from '/icons/caret-black.svg'
 export default function QuestionTemplate({qstn, answr}) {
     const question = useRef()
 
-    function dropAnswer() {
+    function dropAnswer({target}) {
         console.log(question)
         if (question.current.classList.contains('active-question')) {
             question.current.classList.remove('active-question')

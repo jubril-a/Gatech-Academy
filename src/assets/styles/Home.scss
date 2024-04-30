@@ -3,11 +3,11 @@ $primary-color: #0cdd11;
 @use 'Globals';
 
 .cta-wrapper {
-    background-color: #09101c;
+    background-color: black; //#09101c;
 }
 
 .footer-wrapper {
-    background-color: #09101c;
+    background-color: black; //#09101c;
     padding-block: 0;
 }
 
@@ -30,6 +30,10 @@ $primary-color: #0cdd11;
         background-color: #09101c;
         z-index: -100;
     }
+}
+
+#review-wrapper {
+    padding-bottom: 0;
 }
 
 
@@ -77,7 +81,7 @@ h2 {
 }
 
 .instructors {
-    background-color: #1720cb; //#8aff66;
+    background-color: #535adf; //#8aff66;
     color: #fff;
     
     .card__image {
@@ -116,7 +120,7 @@ h2 {
 }
 
 .projects {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 151, 151);
 
     .card__image {
         background-image: url('/features/handson.jpg');
@@ -125,7 +129,7 @@ h2 {
 }
 
 .comfort {
-    background-color: #00d8ff;
+    background-color: #ff70f8;
 
     .card__image {
         background-image: url('/features/comfort.jpg');

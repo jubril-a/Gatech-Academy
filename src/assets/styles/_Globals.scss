@@ -72,6 +72,16 @@
     animation: bounce 4s linear 4s infinite alternate;
 }
 
+@keyframes pulse {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1)}
+  }
+
+.pulse {
+    animation: pulse 3s linear 2s infinite alternate;
+}
+
 .right {
     right: -32px;
     top: 60%;

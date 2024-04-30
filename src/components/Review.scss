@@ -1,0 +1,47 @@
+.review-section {
+    overflow-x: scroll;
+    display: flex;
+    padding-top: 1rem;
+    scroll-snap-type: x mandatory;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.review__card {
+    min-width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+
+    div:first-child {
+        max-width: 720px;
+    }
+
+    .review {
+        font-size: 1.5rem;
+        color: #1720cb;
+        letter-spacing: -0.5px;
+        font-weight: 500;
+    }
+
+    .reviewer {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .reviewer-course {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    div:last-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: 1.5rem;
+    }
+}

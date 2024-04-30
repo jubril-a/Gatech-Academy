@@ -4,6 +4,7 @@ import Hamburger from 'hamburger-react'
 import gatechLogo from '/logo.png'
 import registerIcon from '/icons/register2.svg'
 import homeIcon from '/icons/home.svg'
+import aboutIcon from '/icons/about.svg'
 import coursesIcon from '/icons/courses.svg'
 import contactIcon from '/icons/contact.svg'
 import faqIcon from '/icons/faq.svg'
@@ -26,10 +27,11 @@ export default function Navbar({page}) {
         <header>
             <nav data-expanded={isOpen}>
                 <div className="logo">
-                    <img src={gatechLogo} alt="Gatech Logo" />
+                    <Link to="/#top"><img src={gatechLogo} alt="Gatech Logo" /></Link>
                 </div>
                 <div className="navlinks">
                     <Button eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/#top"/>
+                    <Button eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about#top"/>
                     <div className="course-nav">
                         <Button eClass={page == "Courses" ? "navlink active course-link" : "navlink course-link"} icon={coursesIcon} name="Courses" href="/#courses"/>
                         <div className="dropdown">

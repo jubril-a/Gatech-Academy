@@ -6,6 +6,7 @@ import {
   } from '../components/Hero'
 import Slider from "../components/Slider";
 import Factor from '../components/Factor'
+import Review from "../components/Review";
 import { Contact } from '../components/Contact'
 import { CTA } from '../components/CTA'
 import '../assets/styles/Home.scss'
@@ -116,7 +117,10 @@ export default function Home() {
                 <Factor />
             </div>
             <div className="features-wrapper">
-                <Slider data={features} eClass="features" heading="Perks of our training"/> 
+                <Slider data={features} eClass="features" heading="Perks of our Training"/> 
+            </div>
+            <div className="review-wrapper" id="review-wrapper">
+                <Review />
             </div>
             <div className="contact-wrapper">
                 <Contact />
