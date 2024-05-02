@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import axios from 'axios'
 import PageTemplate from "./PageTemplate";
 import QuestionTemplate from "../components/questionTemplate";
 import "../assets/styles/contactPage.scss"
@@ -33,9 +34,28 @@ const questions = [
 
 export default function Register() {
     const questionsBox = useRef()
+    const contactForm = useRef()
 
     function activeControl() {
         questionsBox.current.children[0].classList.add('active-question')
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        let data = {
+            fullName: `${contactForm.current.firstName.value} ${contactForm.current.lastName.value}`,
+            email: contactForm.current.email.value,
+            phone: contactForm.current.phone.value,
+            message: contactForm.current.message.value,
+        }
+
+        axios.post("https://gatechbackend.onrender.com/api/v1/sendmessage", data)
+            .then((response) => {
+                console.log(response)
+            })
+            .catch((error) => {
+                console.log(error.message)
+            })
     }
 
     return (
@@ -46,7 +66,7 @@ export default function Register() {
                 </main>
                 <div className="main-container constraint">
                     <section className="main-contact">
-                        <div>
+                        <div className="first-child">
                             <h2>Contact Information</h2>
                             <ul className="contact-info">
                                 <li className="info">
@@ -73,26 +93,26 @@ export default function Register() {
                         </div>
                         <div>
                             <h2>Send Us a <span className="text-primary">Message</span></h2>
-                            <form action="">
+                            <form ref={contactForm} onSubmit={handleSubmit}>
                                 <div>
                                     <label>First Name</label>
-                                    <input name="First Name" type="text" />
+                                    <input name="firstName" type="text" required />
                                 </div>
                                 <div>
                                     <label>Last Name</label>
-                                    <input name="Last Name" type="text" />
+                                    <input name="lastName" type="text" required />
                                 </div>
                                 <div>
                                     <label>Email</label>
-                                    <input name="Email" type="email" />
+                                    <input name="email" type="email" required />
                                 </div>
                                 <div>
                                     <label>Phone Number  </label>
-                                    <input name="Telephone" type="tel" />
+                                    <input name="phone" type="tel" required />
                                 </div>
                                 <div className="span-2">
                                     <label>Your Message</label>
-                                    <textarea name="meassage" id=""></textarea>
+                                    <textarea name="message" id="message" required ></textarea>
                                 </div>
                                 <input type="submit" value="Send Message" />
                             </form>

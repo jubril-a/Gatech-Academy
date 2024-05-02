@@ -70,7 +70,7 @@ export default function Review() {
     }
 
     return (
-        <>
+        <div className="constraint">
             <div className="slider-nav">
                 <h2>Hear What Our Alumni Have to Say</h2>
                 <div className="nav">
@@ -80,9 +80,9 @@ export default function Review() {
             </div>
             <section ref={feedbacks} className="review-section">
                 {reviews.map(item => (
-                    <Card review={item} />
+                    <Card review={item} key={item[1]} />
                 ))}
             </section>
-        </>
+        </div>
     )
 }

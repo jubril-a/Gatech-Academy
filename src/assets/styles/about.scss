@@ -150,8 +150,12 @@
         }
         
         div {
-            padding: 6rem 4rem;
+            padding: 4rem 2rem;
             border-radius: .5rem;
+
+            @media (min-width: 820px) {
+                padding: 6rem 4rem;
+            }
         }
 
         .bg-green {

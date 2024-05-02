@@ -58,7 +58,7 @@ export default function About() {
                     </section>
                 </div>
                 <div className="statements_wrapper">
-                    <section className="statements">
+                    <section className="statements constraint">
                         <div className='bg-vision'>
                             <h3>Our <span>Vision</span></h3>
                         </div>

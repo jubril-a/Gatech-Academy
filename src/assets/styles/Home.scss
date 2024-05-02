@@ -81,8 +81,7 @@ h2 {
 }
 
 .instructors {
-    background-color: #535adf; //#8aff66;
-    color: #fff;
+    background-color: #d7cc1b;
     
     .card__image {
         background-image: url('/features/instructors.jpg');
@@ -120,7 +119,8 @@ h2 {
 }
 
 .projects {
-    background-color: rgb(255, 151, 151);
+    background-color: #0d8685;
+    color: #fff;
 
     .card__image {
         background-image: url('/features/handson.jpg');
@@ -129,7 +129,7 @@ h2 {
 }
 
 .comfort {
-    background-color: #ff70f8;
+    background-color: #f4a5df;
 
     .card__image {
         background-image: url('/features/comfort.jpg');

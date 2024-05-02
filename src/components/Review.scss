@@ -1,3 +1,13 @@
+.review-wrapper {
+    h2 {
+        margin-bottom: 1rem;
+
+        @media (min-width: 720px) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
 .review-section {
     overflow-x: scroll;
     display: flex;
@@ -19,6 +29,7 @@
     display: grid;
     justify-content: center;
     gap: 1rem;
+    height: fit-content;
 
     div:first-child {
         max-width: 720px;

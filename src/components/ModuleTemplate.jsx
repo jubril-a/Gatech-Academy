@@ -28,7 +28,7 @@ export default function ModuleTemplate({id, title, topics}) {
             <ul className='module__content'>
                 {
                     topics.map(topic => (
-                        <li>{topic}</li>
+                        <li key={topics.indexOf(topic)}>{topic}</li>
                     ))
                 }
             </ul>
