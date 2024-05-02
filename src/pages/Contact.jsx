@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import axios from 'axios'
 import PageTemplate from "./PageTemplate";
 import QuestionTemplate from "../components/questionTemplate";
@@ -36,12 +36,19 @@ export default function Register() {
     const questionsBox = useRef()
     const contactForm = useRef()
 
+    const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+
+
     function activeControl() {
         questionsBox.current.children[0].classList.add('active-question')
     }
 
     function handleSubmit(e) {
         e.preventDefault()
+        setLoading(true)
+
         let data = {
             fullName: `${contactForm.current.firstName.value} ${contactForm.current.lastName.value}`,
             email: contactForm.current.email.value,
@@ -52,9 +59,12 @@ export default function Register() {
         axios.post("https://gatechbackend.onrender.com/api/v1/sendmessage", data)
             .then((response) => {
                 console.log(response)
+                setLoading(false)
+                setSuccess(true)
             })
             .catch((error) => {
                 console.log(error.message)
+                setError(true)
             })
     }
 
