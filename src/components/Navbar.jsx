@@ -8,11 +8,12 @@ import aboutIcon from '/icons/about.svg'
 import coursesIcon from '/icons/courses.svg'
 import contactIcon from '/icons/contact.svg'
 import faqIcon from '/icons/faq.svg'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './Navbar.scss'
 
 export default function Navbar({page}) {
     const [isOpen, setOpen] = useState(false)
+    const hamburger = useRef()
 
     function controlMenu() {
         console.log(isOpen)
@@ -23,6 +24,10 @@ export default function Navbar({page}) {
         }
     }
 
+    function closeNav() {
+        hamburger.current.children[0].click()
+    }
+
     return (
         <header>
             <nav data-expanded={isOpen}>
@@ -30,10 +35,10 @@ export default function Navbar({page}) {
                     <Link to="/#top"><img src={gatechLogo} alt="Gatech Logo" /></Link>
                 </div>
                 <div className="navlinks">
-                    <Button eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/#top"/>
-                    <Button eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about#top"/>
+                    <Button eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/#top" clickHandler={closeNav}/>
+                    <Button eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about#top"  clickHandler={closeNav}/>
                     <div className="course-nav">
-                        <Button eClass={page == "Courses" ? "navlink active course-link" : "navlink course-link"} icon={coursesIcon} name="Courses" href="/#courses"/>
+                        <Button eClass={page == "Courses" ? "navlink active course-link" : "navlink course-link"} icon={coursesIcon} name="Courses" href="/#courses" clickHandler={closeNav}/>
                         <div className="dropdown">
                             <span></span>
                             <Link to="/courses/frontend/#top">Frontend Development</Link>
@@ -42,13 +47,13 @@ export default function Navbar({page}) {
                             <Link smooth to="/#courses">See all courses</Link>
                         </div> 
                     </div>
-                    <Button eClass={page == "Contact" ? "navlink active" : "navlink"} icon={contactIcon} name="Contact"  href="/contact#top"/>
-                    <Button eClass="navlink" icon={faqIcon} name="FAQ"  href="/contact#faq"/>
-                    <Button eClass="navlink eRegister" icon={faqIcon} name="Register"  href="/register"/>
+                    <Button eClass={page == "Contact" ? "navlink active" : "navlink"} icon={contactIcon} name="Contact"  href="/contact#top" clickHandler={closeNav} />
+                    <Button eClass="navlink" icon={faqIcon} name="FAQ"  href="/contact#faq" clickHandler={closeNav}/>
+                    <Button eClass="navlink eRegister" icon={faqIcon} name="Register"  href="/register#top" clickHandler={closeNav}/>
                 </div>
                 <div className="navButton">
-                    <Button eClass="register" icon={registerIcon} name="Register"  href="/register"/>
-                    <div className="burger"  onClick={controlMenu}>
+                    <Button eClass="register" icon={registerIcon} name="Register"  href="/register#top"/>
+                    <div ref={hamburger} className="burger"  onClick={controlMenu}>
                         <Hamburger />
                     </div>
                 </div>

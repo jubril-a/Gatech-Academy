@@ -7,7 +7,7 @@ export function CTA() {
         <section className="cta constraint">
             <h2>Level Up Your Skills, Increase Employability, and Prepare for Your Future</h2>
             <p className='subtext'>Start your journey towards a fulfilling tech career today</p>
-            <Button eClass="register cta-button" href="/register" icon={registerIcon} name="Join us Today" />
+            <Button eClass="register cta-button" href="/register#top" icon={registerIcon} name="Join us Today" />
         </section>
     )
 }

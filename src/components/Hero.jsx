@@ -69,7 +69,7 @@ export function HeroContent() {
         <main>
             <h1>Acquire <span className='text-primary'>Job-Ready</span> Tech Skills with Our Dynamic Courses</h1>
             <p className='tagline'>Level up your skills to increase your employability in today's competitive job market</p>
-            <Button eClass="register" href="/register" icon={registerIcon} name="Enroll Today" />
+            <Button eClass="register" href="/register#top" icon={registerIcon} name="Enroll Today" />
         </main>  
     )
 }

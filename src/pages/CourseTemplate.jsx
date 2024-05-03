@@ -322,7 +322,7 @@ export default function CourseTemplate() {
                         ))
                     }
                 </div>
-                <Button eClass="register" icon={registerIcon} name="Enroll Today"  href="/register"/>
+                <Button eClass="register" icon={registerIcon} name="Enroll Today"  href="/register#top"/>
             </section>
         </PageTemplate>
     )

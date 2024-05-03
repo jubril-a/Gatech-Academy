@@ -54,12 +54,15 @@
     width: 100vw;
     display: grid;
     justify-content: center;
+    overflow: hidden;
+    height: 100%;
 }
 
 .tech-icons {
     display: flex;
     justify-content: space-between;
-    min-width: 1334px; //calc(100% + 32px);  
+    min-width: 1334px;
+    align-items: end;
 }
 
 .tech-icons > * {

@@ -24,6 +24,7 @@ export function Contact() {
       .then((response) => {
         setLoading(false);
         setSuccess(true);
+        contactForm.current.reset()
       })
       .catch((error) => {
         setLoading(false);

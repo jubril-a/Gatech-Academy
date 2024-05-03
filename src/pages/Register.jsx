@@ -45,6 +45,8 @@ export default function Register() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
+  const formBox = useRef()
+
   function recordInput(updates) {
     for (let update of updates) {
       let key = update.current.name;
@@ -70,10 +72,10 @@ export default function Register() {
   }
 
   return (
-    <div className='overlay-content'>
+    <div id="top" className='overlay-content'>
       <div className='container'>
         <div className='image-side'></div>
-        <div className='form-box overlay-content'>
+        <div ref={formBox} className='form-box overlay-content'>
           <div>
             <HashLink
               to='/'
@@ -210,6 +212,7 @@ export default function Register() {
               ref={stepThree}
               onSubmit={(e) => {
                 e.preventDefault();
+                formBox.current.scrollTop = 0;
                 tech_phase.current.value = stepThree.current.techJourney.value;
                 preference.current.value = stepThree.current.prefer.value;
                 payment_plan.current.value = stepThree.current.plan.value;
@@ -491,7 +494,7 @@ export default function Register() {
                 <p className='error'>
                   Sorry, something went wrong.
                   <HashLink
-                    to='/register'
+                    to='/register#top'
                     className='error-link ml-1'
                   >
                     Try Filling the form Again.

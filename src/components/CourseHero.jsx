@@ -95,7 +95,7 @@ export default function CourseHero({ course }) {
                 <div className="course-info">
                     <h1><span className='text-primary'>{course_name[0]} </span>{course_name[1]}</h1>
                     <p className="course-description">{description}</p>
-                    <Button eClass="register" icon={registerIcon} name="Register"  href="/register"/>
+                    <Button eClass="register" icon={registerIcon} name="Register"  href="/register#top"/>
                 </div>
                 <div className='e-info'>
                     <p className='border-right'>

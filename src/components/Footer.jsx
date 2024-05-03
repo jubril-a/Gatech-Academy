@@ -12,7 +12,7 @@ export default function Footer() {
                 <nav>
                     <li><HashLink to="/contact">Contact</HashLink></li>
                     <li><HashLink to="/contact">FAQ</HashLink></li>
-                    <li><HashLink to="/register">Registration</HashLink></li>
+                    <li><HashLink to="/register#top">Registration</HashLink></li>
                     <li><HashLink smooth to="/#courses">Courses</HashLink></li>
                 </nav>
                 <ul className="socials">
