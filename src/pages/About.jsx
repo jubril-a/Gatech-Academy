@@ -86,9 +86,7 @@ export default function About() {
                                 thrive in this dynamic field. Our training programs are your gateway to a tech-driven world filled
                                 with endless possibilities. Your future as a tech leader starts here.</p>
                         </div>
-                        <div>
-                            <Button eClass="register pulse" href="/register" name="Enroll Now" />
-                        </div>
+                        <Button eClass="register" href="/register" name="Enroll Now" />
                     </section>
                 </div> 
             </div>
