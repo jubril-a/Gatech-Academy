@@ -10,7 +10,7 @@ export default function Factor() {
                 </div>
                 <div>
                     <div className="img overlay-content">
-                        <img src="/softskills.jpg" alt="" />
+                        <img src="/images/softskills.jpg" alt="" />
                         <div className="soft-icons bounce">
                             <img src="/icons/communication.png" alt="" className='left' />
                             <img src="/icons/networking.png" alt="" className='right' />

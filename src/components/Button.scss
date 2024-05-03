@@ -31,4 +31,9 @@
     background-color: rgba(0, 0, 0, 0.8);
     width: 2rem;
     aspect-ratio: 1/1;
+    transition: background-color 1s;
+    
+    &:hover {
+        background-color: rgba(47, 255, 0, 0.4);
+    }
 }

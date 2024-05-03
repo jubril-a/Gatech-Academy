@@ -25,7 +25,7 @@
     }
 
     .main_container {
-        background-image: url(/bg-image-1.jpg);
+        background-image: url(/images/bg-image-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -164,17 +164,17 @@
 
         .bg-blue {
             background-color: #1720cb;
-            background-image: url(/circle-bg.svg);
+            background-image: url(/images/circle-bg.svg);
             color: #fff;
         }
 
         .bg-vision {
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/vision.jpg) center center;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/vision.jpg) center center;
             background-size: 150%;
         }
 
         .bg-mission {
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/mission.jpg) center center;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/mission.jpg) center center;
             background-size: 150%;
         }
 

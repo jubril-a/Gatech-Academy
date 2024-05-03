@@ -23,7 +23,7 @@ export default function About() {
                         that prepares you for success.</p>
                     </div>
                     <div className="description__cards  overlay-content">
-                        <img src="/coursecards.png" alt="course cards" />
+                        <img src="/images/coursecards.png" alt="course cards" />
                         <div className="soft-icons bounce">
                             <img src="/icons/powerbi.png" alt="" className='right' />
                             <img src="/icons/photoshop.png" alt="" className='left' />
