@@ -4,6 +4,7 @@ import './Hero.scss'
 
 export function HeroBackground() {
     return (
+					<div className="background-constraint">
         <div className="background">
             <svg className='shadow top-left o-s'
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,7 @@ export function HeroBackground() {
                 <path fillRule="evenodd"  fill="rgb(255, 255, 255)"
                 d="M155.500,-0.000 C241.380,-0.000 311.000,69.620 311.000,155.500 C311.000,241.380 241.380,311.000 155.500,311.000 C69.620,311.000 -0.000,241.380 -0.000,155.500 C-0.000,69.620 69.620,-0.000 155.500,-0.000 Z"/>
             </svg>
-
+					</div>
         </div>
     )
 }
