@@ -4,7 +4,7 @@ import './Hero.scss'
 
 export function HeroBackground() {
     return (
-					<div className="background-constraint">
+				<div className="background-constraint">
         <div className="background">
             <svg className='shadow top-left o-s'
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export function IconContainer() {
                 <img className="node" src="/icons/node.png" alt="" />
                 <img className="excel" src="/icons/excel.png" alt="" />
                 <img className="html" src="/icons/html.png" alt="" />
-            </div>
+        </div>
         </div>
     )
 }
