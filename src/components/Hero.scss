@@ -102,6 +102,11 @@
     bottom: 10vh;
 }
 
+.background-constraint {
+    overflow: hidden;
+    position: relative;
+}
+
 .background {
     position: absolute;
     z-index: -1000;
