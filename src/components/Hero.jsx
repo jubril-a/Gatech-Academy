@@ -4,7 +4,7 @@ import './Hero.scss'
 
 export function HeroBackground() {
     return (
-				<div className="background-constraint">
+				<div className="background-constraint center-content">
         <div className="background">
             <svg className='shadow top-left o-s'
             xmlns="http://www.w3.org/2000/svg"
