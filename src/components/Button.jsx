@@ -12,3 +12,9 @@ export function ActionButton({clickHandler, eClass, func, icon}) {
         <button className={`action-button ${eClass}`} onClick={clickHandler}><img className="icon" src={icon} alt={func}/></button>
     )
 }
+
+export function NavButton({clickHandler, eClass, href, icon, name}) {
+    return (
+        <Link smooth to={href} onClick={clickHandler} className={"button " + eClass}>{icon ? <span className='iconWrapper'><img className="icon" src={icon} /></span>: null}{name}</Link>
+    )
+}

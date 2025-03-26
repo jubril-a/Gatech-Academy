@@ -1,5 +1,5 @@
 import { HashLink as Link } from 'react-router-hash-link'
-import { Button } from './Button'
+import { Button, NavButton } from './Button'
 import Hamburger from 'hamburger-react'
 import gatechLogo from '/logo.png'
 import registerIcon from '/icons/register2.svg'
@@ -35,10 +35,10 @@ export default function Navbar({page}) {
                     <Link to="/#top"><img src={gatechLogo} alt="Gatech Logo" /></Link>
                 </div>
                 <div className="navlinks">
-                    <Button eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/#top" clickHandler={closeNav}/>
-                    <Button eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about#top"  clickHandler={closeNav}/>
+                    <NavButton eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/#top" clickHandler={closeNav}/>
+                    <NavButton eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about#top"  clickHandler={closeNav}/>
                     <div className="course-nav">
-                        <Button eClass={page == "Courses" ? "navlink active course-link" : "navlink course-link"} icon={coursesIcon} name="Courses" href="/#courses" clickHandler={closeNav}/>
+                        <NavButton eClass={page == "Courses" ? "navlink active course-link" : "navlink course-link"} icon={coursesIcon} name="Courses" href="/#courses" clickHandler={closeNav}/>
                         <div className="dropdown">
                             <span></span>
                             <Link to="/courses/frontend/#top">Frontend Development</Link>
@@ -47,8 +47,8 @@ export default function Navbar({page}) {
                             <Link smooth to="/#courses">See all courses</Link>
                         </div> 
                     </div>
-                    <Button eClass={page == "Contact" ? "navlink active" : "navlink"} icon={contactIcon} name="Contact"  href="/contact#top" clickHandler={closeNav} />
-                    <Button eClass="navlink" icon={faqIcon} name="FAQ"  href="/contact#faq" clickHandler={closeNav}/>
+                    <NavButton eClass={page == "Contact" ? "navlink active" : "navlink"} icon={contactIcon} name="Contact"  href="/contact#top" clickHandler={closeNav} />
+                    <NavButton eClass="navlink" icon={faqIcon} name="FAQ"  href="/contact#faq" clickHandler={closeNav}/>
                     <Button eClass="navlink eRegister" icon={faqIcon} name="Register"  href="/register#top" clickHandler={closeNav}/>
                 </div>
                 <div className="navButton">

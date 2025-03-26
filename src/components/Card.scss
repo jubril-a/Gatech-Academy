@@ -1,17 +1,21 @@
 .card {
     aspect-ratio: 1/1.3;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     scroll-snap-align: start;
-    flex: 0 0 min(300px, 80%);
+    flex: 0 0 min(300px,88%);
 
     &:hover {
         img {
             transform: scale(1.5);
         }       
+    }
+
+    @media (min-width: 420px) {
+        border-radius: 16px;
     }
 }
 
@@ -40,6 +44,7 @@
     }
 
     a {
+        font-size: 14px;
         &:hover {
             color: red;
         }

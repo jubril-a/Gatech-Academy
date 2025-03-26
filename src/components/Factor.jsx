@@ -4,7 +4,7 @@ export default function Factor() {
     return (
         <section className="factor constraint">
                 <div className='content'>
-                    <h2>What Sets us Apart</h2>
+                    <h2>What Sets us Apart:</h2>
                     <h3><span>Soft Skills</span> Development</h3>
                     <p className='skill-description'>Through interactive workshops and practical exercises, we empower our students to communicate effectively, collaborate efficiently, and adapt swiftly, ensuring they emerge as well-rounded professionals ready to excel in any environment.</p>
                 </div>
