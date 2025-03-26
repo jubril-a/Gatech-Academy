@@ -13,7 +13,7 @@ header nav {
   row-gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
-  padding: 1rem;
+  padding: 12px 1rem;
 
   @media (min-width: 961px) and (max-width: 1420px) {
     padding: 1rem 3rem;
@@ -33,7 +33,7 @@ header nav {
 
   .navlinks {
     display: flex;
-    gap: 0.1rem;
+    // gap: 0.1rem;
   }
 
   .navlink {
