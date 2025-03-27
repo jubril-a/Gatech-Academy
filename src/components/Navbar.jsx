@@ -32,27 +32,27 @@ export default function Navbar({page}) {
         <header>
             <nav data-expanded={isOpen}>
                 <div className="logo">
-                    <Link to="/#top"><img src={gatechLogo} alt="Gatech Logo" /></Link>
+                    <Link to="/"><img src={gatechLogo} alt="Gatech Logo" /></Link>
                 </div>
                 <div className="navlinks">
-                    <NavButton eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/#top" clickHandler={closeNav}/>
-                    <NavButton eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about#top"  clickHandler={closeNav}/>
+                    <NavButton eClass={page == "Home" ? "navlink active" : "navlink"} icon={homeIcon} name="Home" href="/" clickHandler={closeNav}/>
+                    <NavButton eClass={page == "About" ? "navlink active" : "navlink"} icon={aboutIcon} name="About" href="/about"  clickHandler={closeNav}/>
                     <div className="course-nav">
                         <NavButton eClass={page == "Courses" ? "navlink active course-link" : "navlink course-link"} icon={coursesIcon} name="Courses" href="/#courses" clickHandler={closeNav}/>
                         <div className="dropdown">
                             <span></span>
-                            <Link to="/courses/frontend/#top">Frontend Development</Link>
-                            <Link to="/courses/data analysis/#top">Data Analysis</Link>
-                            <Link to="/courses/graphics/#top">Graphic Design</Link>
+                            <Link to="/courses/frontend/">Frontend Development</Link>
+                            <Link to="/courses/data analysis/">Data Analysis</Link>
+                            <Link to="/courses/graphics/">Graphic Design</Link>
                             <Link smooth to="/#courses">See all courses</Link>
                         </div> 
                     </div>
-                    <NavButton eClass={page == "Contact" ? "navlink active" : "navlink"} icon={contactIcon} name="Contact"  href="/contact#top" clickHandler={closeNav} />
+                    <NavButton eClass={page == "Contact" ? "navlink active" : "navlink"} icon={contactIcon} name="Contact"  href="/contact" clickHandler={closeNav} />
                     <NavButton eClass="navlink" icon={faqIcon} name="FAQ"  href="/contact#faq" clickHandler={closeNav}/>
-                    <Button eClass="navlink eRegister" icon={faqIcon} name="Register"  href="/register#top" clickHandler={closeNav}/>
+                    <Button eClass="navlink eRegister" icon={faqIcon} name="Register"  href="/register" clickHandler={closeNav}/>
                 </div>
                 <div className="navButton">
-                    <Button eClass="register" icon={registerIcon} name="Register"  href="/register#top"/>
+                    <Button eClass="register" icon={registerIcon} name="Register"  href="/register"/>
                     <div ref={hamburger} className="burger"  onClick={controlMenu}>
                         <Hamburger />
                     </div>
