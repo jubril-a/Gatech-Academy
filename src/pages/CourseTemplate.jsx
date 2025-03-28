@@ -21,40 +21,70 @@ const programme = [
     },
 ]
 
+// frontend: [
+//     {
+//         id: "Month 1",
+//         title: "Introduction to Web Development and Frontend Basics",
+//         topics: [
+//             "Introduction to Web Development and Full Stack Architecture",
+//             "HTML5: Structuring Web Content",
+//             "CSS3: Styling and Layouts",
+//             "Introduction to Responsive Web Design",
+//             "JavaScript Fundamentals: Variables, Data Types, Control Structures",
+//             "Document Object Model Manipulation"],
+//     },
+//     {
+//         id: "Month 2",
+//         title: "Advanced Frontend Development",
+//         topics: [
+//             "Advanced CSS Techniques: Flexbox, Grid, CSS Preprocessors (e.g., SASS)",
+//             "Introduction to Version Control using Git and GitHub",
+//             "Dynamic Websites and Javascript code Organization",
+//             "Event Handling and Asynchronous Programming",
+//             "Introduction to Frontend Frameworks: React.js",
+//             "Building Interactive User Interfaces with React.js"],
+//     },
+//     {
+//         id: "Month 3",
+//         title: "Advanced Concepts and Final Projects",
+//         topics: [
+//             "Web Application Architecture Patterns: Microservices, Serverless",
+//             "Real-time Web Applications using WebSockets",
+//             "Introduction to GraphQL",
+//             "Advanced Frontend State Management",
+//             "Final Group Projects: Full Stack Web Applications",
+//             "Project Deployment and Showcase"],
+//     },
+// ],
+
 const syllabus = {
     frontend: [
         {
             id: "Month 1",
             title: "Introduction to Web Development and Frontend Basics",
             topics: [
-                "Introduction to Web Development and Full Stack Architecture",
-                "HTML5: Structuring Web Content",
-                "CSS3: Styling and Layouts",
-                "Introduction to Responsive Web Design",
-                "JavaScript Fundamentals: Variables, Data Types, Control Structures",
-                "Document Object Model Manipulation"],
+                "Web Basics and Terminologies",
+                "HTML: Structuring Web Content",
+                "CSS: Styling and Basic Layouts"],
         },
         {
             id: "Month 2",
-            title: "Advanced Frontend Development",
+            title: "Mastering Layouts, Responsiveness, and Version Control",
             topics: [
-                "Advanced CSS Techniques: Flexbox, Grid, CSS Preprocessors (e.g., SASS)",
-                "Introduction to Version Control using Git and GitHub",
-                "Dynamic Websites and Javascript code Organization",
-                "Event Handling and Asynchronous Programming",
-                "Introduction to Frontend Frameworks: React.js",
-                "Building Interactive User Interfaces with React.js"],
+                "CSS Layouts & Positioning",
+                "Introduction to Responsive Web Design",
+                "Version Control with Git & GitHub",
+                "Introduction to Web Accessibility",
+                "Transitions & Transformations"],
         },
         {
             id: "Month 3",
-            title: "Advanced Concepts and Final Projects",
+            title: "Adding Interactivity with JavaScript",
             topics: [
-                "Web Application Architecture Patterns: Microservices, Serverless",
-                "Real-time Web Applications using WebSockets",
-                "Introduction to GraphQL",
-                "Advanced Frontend State Management",
-                "Final Group Projects: Full Stack Web Applications",
-                "Project Deployment and Showcase"],
+                "JavaScript Basics",
+                "DOM Manipulation ",
+                "Fetching Data from APIs",
+                "Final Projects & Project Deployment"]
         },
     ],
     "data analysis": [

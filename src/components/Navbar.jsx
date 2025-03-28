@@ -30,6 +30,9 @@ export default function Navbar({page}) {
 
     return (
         <header>
+            <div className="rtl">
+                <p>Exclusive Offer!!! Enjoy a 25% discount on all our courses from 1st of July to 31st October, 2024</p>
+            </div>
             <nav data-expanded={isOpen}>
                 <div className="logo">
                     <Link to="/"><img src={gatechLogo} alt="Gatech Logo" /></Link>

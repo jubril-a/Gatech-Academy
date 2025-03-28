@@ -7,6 +7,27 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@keyframes right-to-left {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.rtl {
+  background-color: #000;
+  padding: 8px;
+
+  p {
+    color: #00ff04;
+    font-size: 0.85rem;
+    animation: right-to-left 30s infinite linear;
+    width: fit-content;
+  }
+}
+
 header nav {
   display: flex;
   justify-content: space-between;

@@ -18,7 +18,7 @@ const courses = {
     "fullstack": {
         "course_name": ["Full Stack", "Web Development"],
         "description": "From front-end aesthetics to back-end functionality, our comprehensive curriculum equips you with the skills to craft dynamic, interactive websites and robust applications.",
-        "amount": "N300, 000",
+        "amount": "N400, 000",
         "duration": "6 Months",
         "image_name": "fullstack.jpg",
         "image_description": "",
@@ -27,7 +27,7 @@ const courses = {
     "frontend": {
         "course_name": ["Frontend", "Web Development"],
         "description": "Dive headfirst into the captivating realm of Frontend Development. Unleash your creativity as you master the building blocks of the web – HTML, CSS, and JavaScript.",
-        "amount": "N150, 000",
+        "amount": "N200,000",
         "duration": "3 Months",
         "image_name": "frontend.jpg",
         "image_description": "",
@@ -36,7 +36,7 @@ const courses = {
     "backend": {
         "course_name": ["Backend", "Web Development"],
         "description": "Delve into the intricacies of server-side programming as you master languages like Node.js and SQL",
-        "amount": "N150, 000",
+        "amount": "N200,000",
         "duration": "3 Months",
         "image_name": "backend.jpg",
         "image_description": "",
@@ -45,7 +45,7 @@ const courses = {
     "it admin": {
         "course_name": ["IT", "Admin"],
         "description": "Throughout the program, you'll gain practical skills, hands-on experience, and the confidence to tackle real-world IT challenges.",
-        "amount": "N150, 000",
+        "amount": "N200,000",
         "duration": "3 Months",
         "image_name": "it-admin.jpg",
         "image_description": "",
@@ -54,7 +54,7 @@ const courses = {
     "advanced graphics": {
         "course_name": ["Advanced", "Graphic Design"],
         "description": "This program serves as your advanced toolkit, honing your creativity and equipping you with the skills to breathe life into intricate visual concepts.",
-        "amount": "N150, 000",
+        "amount": "N200,000",
         "duration": "3 Months",
         "image_name": "a-graphics.jpg",
         "image_description": "",
@@ -63,7 +63,7 @@ const courses = {
     "graphics": {
         "course_name": ["Graphic", "Design"],
         "description": "From conceptualization to execution, you'll master the art of crafting stunning visuals that effectively communicate messages.",
-        "amount": "N150, 000",
+        "amount": "N200,000",
         "duration": "3 Months",
         "image_name": "graphics.jpg",
         "image_description": "",
@@ -72,7 +72,7 @@ const courses = {
     "data analysis": {
         "course_name": ["Data", "Analysis"],
         "description": "Equip yourself with the skills needed to unravel insights from data, make data-driven decisions, and propel businesses forward.",
-        "amount": "N150, 000",
+        "amount": "N200,000",
         "duration": "3 Months",
         "image_name": "data.jpg",
         "image_description": "",
