@@ -14,6 +14,12 @@ import './Navbar.scss'
 export default function Navbar({page}) {
     const [isOpen, setOpen] = useState(false)
     const hamburger = useRef()
+    const months = ["January", "February", "March", "April",
+        "May", "June", "July", "August", "September", "October",
+        "November", "December"]
+    let date = new Date()
+    let month = months[date.getMonth()]
+
 
     function controlMenu() {
         console.log(isOpen)
@@ -31,7 +37,7 @@ export default function Navbar({page}) {
     return (
         <header>
             <div className="rtl">
-                <p>Exclusive Offer!!! Enjoy a 25% discount on all our courses from 1st of July to 31st October, 2024</p>
+                {<p>Exclusive Offer!!! Enjoy a 25% discount on all our courses from 1st of {month} to 30th {month}, {date.getFullYear()}</p>}
             </div>
             <nav data-expanded={isOpen}>
                 <div className="logo">

@@ -2,7 +2,7 @@ import './Factor.scss'
 
 export default function Factor() {
     return (
-        <section className="factor constraint">
+        <section className="factor">
                 <div className='content'>
                     <h2>What Sets us Apart:</h2>
                     <h3><span>Soft Skills</span> Development</h3>
