@@ -158,34 +158,31 @@ const syllabus = {
     graphics: [
         {
             id: "Month 1",
-            title: "Getting Started with Adobe Photoshop",
+            title: "Introduction to Graphic Design",
             topics: [
+                "Graphic Design Principles",
                 "Introduction to Adobe Photoshop",
-                "Essential tools and their functions (selection tools, brush tools, etc.)",
-                "Working with layers and blending modes",
-                "Image Editing",
-                "Cropping, resizing, and transforming images"],
+                "Essential tools and their functions (move tool, selection tools, etc.)",
+                "Typography and Text Effects", 
+                ],
         },
         {
             id: "Month 2",
-            title: "Photoshop Techniques",
+            title: "Getting Started with Adobe Photoshop",
             topics: [
-                "Typography and Text Effects",
-                "Working with text layers, fonts, and styles",
-                "Creating text effects like gradients, shadows, and warping",
-                "Photo Retouching and Special Effects",
-                "Retouching portraits (blemish removal, skin smoothing, etc.)",
-                "Applying filters and special effects (e.g., HDR, tilt-shift)"],
+                "Working with shapes, lines and color",
+                "Working with layers and blending modes",
+                "Cropping, resizing, and transforming images",
+                "Image Editing",]
         },
         {
             id: "Month 3",
-            title: "Introduction to CorelDraw",
+            title: "Photoshop Techniques",
             topics: [
-                "CorelDraw Basics",
-                "Introduction to CorelDraw interface",
-                "Working with shapes, lines, and text",
-                "Vector Graphics and Illustrations",
-                "Final Projects and Portfolio Development"],
+                "Creating effects like gradients and shadows",
+                "Photo Retouching and Special Effects",
+                "Retouching portraits (blemish removal, skin smoothing, etc.)",
+                "Applying filters and special effects (e.g., HDR, tilt-shift)"],
         },
     ],
     fullstack: [

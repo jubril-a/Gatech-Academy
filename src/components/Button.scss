@@ -3,14 +3,14 @@
     align-items: center;
     gap: .5rem;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .icon {
     max-height: 20px;
 }
 
-.button:not(.register):not(.active):not(.cta-button):not(.course-link) {
+.button:not(.register):not(.cta-button) {
     .icon {
         width: 0;
         transition: width .5s;
@@ -24,6 +24,18 @@
         .icon {
             width: 20px;
         }
+    }
+}
+
+.button.active {
+    .icon {
+        width: 20px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .icon {
+        visibility: hidden;
     }
 }
 
