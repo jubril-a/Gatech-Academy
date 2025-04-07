@@ -35,11 +35,11 @@ export default function Navbar({page}) {
     }
 
     return (
-        <header>
+        <>
             <div className="rtl">
                 {<p>Exclusive Offer!!! Enjoy a 25% discount on all our courses from 1st of {month} to 30th {month}, {date.getFullYear()}</p>}
             </div>
-            <nav data-expanded={isOpen}>
+            <nav data-expanded={isOpen} className='sticky'>
                 <div className="logo">
                     <Link to="/"><img src={gatechLogo} alt="Gatech Logo" /></Link>
                 </div>
@@ -68,7 +68,7 @@ export default function Navbar({page}) {
                 </div>
                 
             </nav>
-        </header>
+        </>
         
     )
 }

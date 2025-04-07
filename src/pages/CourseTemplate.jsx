@@ -61,7 +61,7 @@ const syllabus = {
     frontend: [
         {
             id: "Month 1",
-            title: "Introduction to Web Development and Frontend Basics",
+            title: "Introduction to Web Development",
             topics: [
                 "Web Basics and Terminologies",
                 "HTML: Structuring Web Content",
@@ -72,9 +72,8 @@ const syllabus = {
             title: "Mastering Layouts, Responsiveness, and Version Control",
             topics: [
                 "CSS Layouts & Positioning",
-                "Introduction to Responsive Web Design",
+                "Responsive Web Design",
                 "Version Control with Git & GitHub",
-                "Introduction to Web Accessibility",
                 "Transitions & Transformations"],
         },
         {
@@ -84,7 +83,7 @@ const syllabus = {
                 "JavaScript Basics",
                 "DOM Manipulation ",
                 "Fetching Data from APIs",
-                "Final Projects & Project Deployment"]
+                "Final Projects"]
         },
     ],
     "data analysis": [
@@ -160,29 +159,32 @@ const syllabus = {
             id: "Month 1",
             title: "Introduction to Graphic Design",
             topics: [
-                "Graphic Design Principles",
-                "Introduction to Adobe Photoshop",
-                "Essential tools and their functions (move tool, selection tools, etc.)",
-                "Typography and Text Effects", 
+                "Graphic Design Principles (Alignment, Hierarchy, Contrast, etc.)",
+                "Photoshop interface: Panels and Customizing Workspace",
+                "Photoshop Essential Tools (move tool, selection tools, shape tools, etc.)",
+                "Typography and Working with Images",
+                "Projects: Designing Business Cards, ID Cards, etc.",
                 ],
         },
         {
             id: "Month 2",
-            title: "Getting Started with Adobe Photoshop",
+            title: "Advanced Photoshop",
             topics: [
-                "Working with shapes, lines and color",
-                "Working with layers and blending modes",
-                "Cropping, resizing, and transforming images",
-                "Image Editing",]
+                "Working with layers and Blending Modes",
+                "Fills: Colors, Patterns, Gradients & Textures.",
+                "Photo Retouching and Applying Filters",
+                "Effects: Glow Effects, Glass Morphism, etc.",
+                "Projects: Designing Flyers, Banners, etc.",
+            ]
         },
         {
             id: "Month 3",
-            title: "Photoshop Techniques",
+            title: "Logo Design & Branding",
             topics: [
-                "Creating effects like gradients and shadows",
-                "Photo Retouching and Special Effects",
-                "Retouching portraits (blemish removal, skin smoothing, etc.)",
-                "Applying filters and special effects (e.g., HDR, tilt-shift)"],
+                "Logo Design",
+                "Designing Branding Assets",
+                "Designing for Print",
+                "Final Projects: Design a brand & Build a portfolio "],
         },
     ],
     fullstack: [
