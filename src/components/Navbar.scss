@@ -7,6 +7,15 @@
   }
 }
 
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .rtl {
   background-color: #000;
   padding: 8px;
@@ -29,13 +38,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   padding: 12px 1rem;
-  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.5);
-
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 
   @media (min-width: 961px) and (max-width: 1420px) {
     padding: 1rem 3rem;
@@ -64,6 +67,7 @@ nav {
     gap: 0.5rem;
     height: min-content;
     border-bottom: 1px solid transparent;
+    transition: 0.85s;
 
     @media (min-width: 961px) and (max-width: 1420px) {
       padding: 0.4rem 1rem;
@@ -71,8 +75,9 @@ nav {
 
     @media (min-width: 960px) {
       &:hover {
-        border-radius: 0.5rem;
-        box-shadow: inset 10rem 0 0 0 rgba(12, 221, 17, 0.25);
+        border-radius: 8px;
+        // box-shadow: inset 10rem 0 0 0 rgba(12, 221, 17, 0.25);
+        background-color: rgba(12, 221, 17, 0.25);
       }
     }
 
