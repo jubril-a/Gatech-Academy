@@ -60,19 +60,18 @@ nav {
 
   .navlink {
     color: #212121;
-    padding: 0.6rem 1.2rem;
+    padding: 8px 20px;
     gap: 0.5rem;
     height: min-content;
-    // transition: 1s;
     border-bottom: 1px solid transparent;
 
     @media (min-width: 961px) and (max-width: 1420px) {
       padding: 0.4rem 1rem;
     }
 
-    @media (min-width: 960px) {      
+    @media (min-width: 960px) {
       &:hover {
-        border-radius: 6px;
+        border-radius: 0.5rem;
         box-shadow: inset 10rem 0 0 0 rgba(12, 221, 17, 0.25);
       }
     }

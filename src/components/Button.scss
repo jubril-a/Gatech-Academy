@@ -10,26 +10,11 @@
     max-height: 20px;
 }
 
-.button:not(.register):not(.cta-button) {
+.button:not(.register):not(.cta-button):not(.eRegister) {
+    gap: 0;
+    padding-inline: 28px;
     .icon {
         width: 0;
-        transition: width .5s;
-
-        @media (max-width: 960px) {
-            width: 20px;
-        }
-    }
-
-    &:hover {
-        .icon {
-            width: 20px;
-        }
-    }
-}
-
-.button.active {
-    .icon {
-        width: 20px !important;
     }
 }
 
@@ -48,10 +33,4 @@
     &:hover {
         background-color: rgba(47, 255, 0, 0.4);
     }
-}
-
-.iconWrapper {
-    width: 20px;
-    display: flex;
-    align-items: center;
 }
