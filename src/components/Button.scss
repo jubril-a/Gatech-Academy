@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 960px) {
-    .icon {
+    .icon:not(.register .icon) {
         visibility: hidden;
     }
 }
