@@ -9,7 +9,7 @@ export default function About() {
                 <div className="main_container">
                     <main>
                         <div className="main__content">
-                            <h1><span className="text-primary">Welcome to Gatech<br /></span> where educational excellence meets real-world relevance</h1>
+                            <h1><span className="text-primary">Welcome to Gatech:<br /></span> where educational excellence meets real-world relevance</h1>
                             <p className="description">At Gatech, we understand that the ever-evolving tech landscape demands
                             a new kind of education—one that equips you with the knowledge and skills to thrive in a dynamic
                             world driven by technology.</p>

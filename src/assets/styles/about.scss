@@ -1,3 +1,7 @@
+.About {
+    background-color: #fff;
+}
+
 .about {
     .main_container {
         display: grid;
@@ -29,6 +33,23 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        @media (max-width: 1080px) {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-color: rgba(0, 0, 0, 0.651);
+            }
+
+            main {
+                position: relative;
+                color: #fff;
+            }
+        }
+        
     }
     
     h1 {

@@ -3,10 +3,6 @@ import { Button, NavButton } from './Button'
 import Hamburger from 'hamburger-react'
 import gatechLogo from '/logo.png'
 import registerIcon from '/icons/register2.svg'
-import homeIcon from '/icons/home.svg'
-import aboutIcon from '/icons/about.svg'
-import coursesIcon from '/icons/courses.svg'
-import contactIcon from '/icons/contact.svg'
 import faqIcon from '/icons/faq.svg'
 import { useRef, useState } from 'react'
 import './Navbar.scss'
@@ -39,7 +35,7 @@ export default function Navbar({page}) {
             <div className="rtl">
                 {<p>Exclusive Offer!!! Enjoy a 25% discount on all our courses from 1st of {month} to 30th {month}, {date.getFullYear()}</p>}
             </div>
-            <nav data-expanded={isOpen} className='sticky'>
+            <nav data-expanded={isOpen} className={'sticky ' + page}>
                 <div className="logo">
                     <Link to="/"><img src={gatechLogo} alt="Gatech Logo" /></Link>
                 </div>
